@@ -1,0 +1,178 @@
+$color1:rgb(48, 74, 95);
+$color2: rgb(230, 0, 126);
+$color3: #fff;
+
+//Mobile first
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+    color: $color1;
+}
+.logo{
+    width: 50px;
+}
+
+.carousel-caption{
+    line-height: 30px;
+    font-size: 24px;
+    padding:10px;
+}
+
+.p1{
+    font-size: 19px;
+    line-height: 27px;
+}
+
+.p2{
+    font-size: 12px;
+    line-height: 19px;
+    padding-top: 5px;
+}
+
+.input{
+    border:none;
+    border-bottom: 1px solid $color1;
+    width: 100%;
+    font-size: 9px;
+}
+
+.checkbox { 
+    display: block; 
+    position: relative; 
+    padding-left: 45px; 
+    margin-bottom: 15px; 
+    cursor: pointer; 
+    font-size: 9px; 
+    line-height: 11px;
+} 
+  
+/* Hide the original checkbox */ 
+input[type=checkbox] { 
+    visibility: hidden; 
+} 
+  
+/* creating a custom checkbox */ 
+.checkbox1 { 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    height: 35px; 
+    width: 35px; 
+    border: 1px solid $color1;
+} 
+   
+.checkbox:hover input ~ .checkbox1 { 
+    background-color: $color2;
+}
+
+.checkbox input:checked ~ .checkbox1 { 
+    background-color: $color2;
+} 
+
+.send{
+    width: 100%;
+    height: 50px;
+    background-color: $color2;
+    color: $color3;
+    border: none;
+    font-weight: bolder;
+    font-size: 17px;
+}
+
+/*Alert if input is wrong*/
+.alert-contact{
+    color:$color2;
+    font-size: 9px;
+    padding-top: 0px;
+}
+
+.section{
+    background-color: $color1;
+}
+
+.icon{
+    width: 50px;
+    padding-top: 20px;
+}
+
+.icon-text{
+    padding: 0px 75px;
+    color: $color3;
+}
+
+.footer1{
+    background-color: #313131;
+    color:$color3;
+}
+
+.icons{
+    display: inline-flex;
+}
+
+.fa-icon{
+    width: 40px;
+}
+
+.p3{
+    font-size: 12px;
+    line-height: 19px;
+    font-weight: bold;
+    color:$color3;
+}
+
+.footer-icon{
+    vertical-align: middle;
+}
+
+.some{
+    padding-left: 100px;
+}
+
+@media only screen and (min-width: 600px){
+.logo{
+    width: 70px;
+    margin-left: 70px;
+}
+.some{
+    padding-left: 70%;
+}
+.icons{
+    padding-left: 170px;
+}
+.footer-text{
+    padding-left: 170px;
+}
+.section{
+    padding: 50px 130px;
+}
+.width{
+    padding: 0px 100px 10px 100px;
+}
+.p1{
+    font-size: 23px;
+}
+.carousel-caption{
+    line-height: 30px;
+    font-size: 30px;
+    padding:30px;
+}
+.icon{
+    width: 70px;
+}
+}
+@media only screen and (min-width: 700px){
+    .carousel-caption{
+        padding:40px;
+    }
+}
+@media only screen and (min-width: 800px){
+    .carousel-caption{
+        padding:50px;
+    }
+}
+@media only screen and (min-width: 1000px){
+    .carousel-caption{
+        padding:100px;
+    }
+}
